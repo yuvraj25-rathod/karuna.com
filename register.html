@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #dfe9ff, #ffffff);
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            background-image: url(front_ghsc_new.jpg);
+            background-position: upper;
+        }
+
+        header {
+            background: linear-gradient(45deg, #002b80, #0066ff);
+            padding: 30px;
+            text-align: center;
+            color: white;
+            font-size: 34px;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.4);
+            background-color: cornflowerblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #0033aa;
+        }
+
+        form {
+            width: 45%;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #0004;
+            animation: fadeIn 1.2s;
+        }
+
+        label {
+            font-size: 18px;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #777;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+
+        button {
+            background: #0066ff;
+            color: white;
+            padding: 14px;
+            border: none;
+            width: 100%;
+            font-size: 18px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #002b80;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>Student Registration</header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="students.html">Students List</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">login</a>
+    </nav>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" required>
+
+        <label>Roll Number</label>
+        <input type="text" required>
+
+        <label>Course</label>
+        <select>
+            <option>BSc</option>
+            <option>BCA</option>
+            <option>MSc</option>
+            <option>Biotech</option>
+        </select>
+
+        <label>Upload Photo</label>
+        <input type="file" accept="image/*" required>
+
+        <button type="submit">Register Now</button>
+    </form>
+
+</body>
+
+</html>

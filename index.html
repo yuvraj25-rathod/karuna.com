@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Holkar Science College – Student Portal</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        body {
+
+
+            margin: 0;
+            font-family: Poppins, Arial;
+
+            color: white;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            background-image: url(front_ghsc_new.jpg);
+            background-position: upper;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(0, 0, 0, 0.4);
+            background-color: cornflowerblue;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Logo Section */
+        .logo-box {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .logo-box img {
+            width: 230px;
+            height: auto;
+            border-radius: 10px;
+            background: white;
+            padding: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Hero Text */
+        .hero {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: bold;
+
+        }
+
+        .hero p {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+
+        /* Cards */
+        .section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+
+            flex-wrap: nowrap;
+            /* All cards stay in one row */
+
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .card {
+            width: 300px;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card h3 {
+            color: yellow;
+            font-size: 22px;
+        }
+
+        .card p {
+            font-size: 17px;
+        }
+
+        .card a {
+            text-emphasis: none;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="register.html">Register</a>
+        <a href="students.html">Students List</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">login</a>
+    </nav>
+
+    <!-- Logo -->
+
+
+    <!-- Hero Text -->
+    <div class="hero">
+        <h1>Welcome to Holkar Science College, Indore</h1>
+        <p>A Grade ★ | NAAC Accredited | Est. 1891</p>
+    </div>
+
+    <!-- Feature Cards -->
+    <div class="section">
+        <div class="card">
+            <h3> <a href="register.html">Registration</a></h3>
+            <p>Register new students with photo upload and details.</p>
+
+        </div>
+
+        <div class="card">
+
+            <h3> <a href="students.html">students List</a></h3>
+            <p>View all registered students with profile images.</p>
+        </div>
+
+        <div class="card">
+            <h3><a href="about.html">Information</a></h3>
+            <p>Get complete details about Holkar Science College.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
